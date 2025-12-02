@@ -5,7 +5,7 @@ export default function Nav() {
   const {count,totalPrice }=useContext(CartContext)
   return (
  
-  <div className="flex justify-center navbar bg-base-100 shadow-sm">
+  <div className="flex justify-center navbar bg-black shadow-sm">
   <div className="flex-1">
     <a className="btn btn-ghost text-yellow-600 text-xl">OctoShop</a>
   </div>
