@@ -19,6 +19,7 @@ export default function ProductList() {
                     <div className="card-body">
                         <h2 className="card-title">{product.title}</h2>
                         <div className="card-actions justify-end">
+                         <h2 className="text-black font-bold m-auto text-xl">{product.price} DZD</h2>
                             <button className="btn btn-primary">
                                 <Link to={`productDetais/${product._id}`} >Buy Now</Link>
                             </button>

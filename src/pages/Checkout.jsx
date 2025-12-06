@@ -104,35 +104,29 @@ const titles = cart.map(item => item.title);
     </div>
 
     {/* Wilaya */}
-    <div className="form-control space-y-1">
-      <label className="label text-sm font-medium">Wilaya</label>
-      <select
-        name="willaya"
+    
+   <div className="form-control space-y-1">
+      <label className="label text-sm font-medium">Willaya</label>
+      <input
+        name="Number"
+        type="text"
+        className="input input-neutral w-full rounded-lg"
         onChange={handleChange}
-        className="select select-neutral w-full rounded-lg"
-      >
-        <option disabled selected>Select Wilaya</option>
-        <option>Algiers</option>
-        <option>Oran</option>
-        <option>Setif</option>
-      </select>
+        placeholder="Enter your Willaya"
+      />
     </div>
-
     {/* City */}
-    <div className="form-control space-y-1">
+ 
+   <div className="form-control space-y-1">
       <label className="label text-sm font-medium">City</label>
-      <select
-        name="city"
+      <input
+        name="Number"
+        type="text"
+        className="input input-neutral w-full rounded-lg"
         onChange={handleChange}
-        className="select select-neutral w-full rounded-lg"
-      >
-        <option disabled selected>Select City</option>
-        <option>Bab Ezzouar</option>
-        <option>Bir El Djir</option>
-        <option>Downtown</option>
-      </select>
+        placeholder="Enter your City"
+      />
     </div>
-
     {/* Total */}
     <h1 className="text-lg font-semibold text-center pt-2">
       Total: {totalPrice} DA
