@@ -3,7 +3,7 @@ import { useContext } from "react"
 import { Link } from "react-router-dom"
 
 export default function ProductList() {
-    const {products,error,loading}=useContext(ProductContext)
+    const {products}=useContext(ProductContext)
     console.log(products)
 
     return (

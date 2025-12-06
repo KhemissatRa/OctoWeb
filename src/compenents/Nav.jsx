@@ -19,7 +19,7 @@ export default function Nav() {
       </div>
       <div
         tabIndex={0}
-        className="card card-compact dropdown-content z-1 mt-3 w-52 shadow">
+        className="card card-compact dropdown-content bg-black opacity-[0.8] z-1 mt-3 w-52 shadow">
         <div className="card-body">
           <span className="text-lg font-bold">{count} Items</span>
           <span className="text-info">{totalPrice} $</span>

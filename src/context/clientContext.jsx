@@ -13,9 +13,9 @@ export default function ClientContext({ children }) {
     try {
       setLoading(true);
       const res = await axios.get("https://backendoctoweb.onrender.com/product/");
-      const response = res.data
+  
     console.log(res)
-      setProducts(response);
+      setProducts(res);
     } catch (err) {
       setError(err);
     } finally {
