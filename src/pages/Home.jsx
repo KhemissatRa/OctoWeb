@@ -2,7 +2,6 @@ import { Features } from 'tailwindcss'
 import Category from '../compenents/Category'
 import ProductList from '../compenents/ProductList'
 import Timeline from '../compenents/Timeline'
-import Fouter from '../compenents/Fouter'
 import ServiceSection from '../compenents/abtservice'
  export default function Home () {
   return (
@@ -13,7 +12,6 @@ import ServiceSection from '../compenents/abtservice'
 
       <Timeline/>
 
-   <Fouter/>
    </div>
   )
 }

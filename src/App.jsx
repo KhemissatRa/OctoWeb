@@ -4,6 +4,8 @@ import Home from "./pages/Home";
 import ProductDetais from "./pages/ProductDetais"
 import ShoppingCart from "./pages/shopingCart";
 import Checkout from "./pages/Checkout";
+import Fouter from './compenents/Fouter'
+
 function App() {
 
   return (
@@ -19,7 +21,8 @@ function App() {
 
       </Routes>
          
-      
+   <Fouter/>
+
     </BrowserRouter>
 </div>
   )
