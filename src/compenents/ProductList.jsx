@@ -7,26 +7,45 @@ export default function ProductList() {
     console.log(products)
 
     return (
-        <ul className="grid grid-cols-2 sm:grid-cols-2 md:grid-cols-3 gap-4 items-center">
-            {products.map((product) => (
-                <div key={product._id} className="card text-black text-center bg-white max-w-82 max-h-92 shadow-sm">
-                    <figure>
-                        <img
-                            src={product.Image}
-                            alt="Shoes"
-                        />
-                    </figure>
-                    <div className="card-body">
-                        <h2 className="card-title">{product.title}</h2>
-                        <div className="card-actions justify-end">
-                         <h2 className="text-black font-bold m-auto text-xl">{product.price} DZD</h2>
-                            <button className="btn btn-primary">
-                                <Link to={`productDetais/${product._id}`} >Buy Now</Link>
-                            </button>
-                        </div>
-                    </div>
-                </div>
-            ))}
-        </ul>
+     <ul className="grid grid-cols-2 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
+  {products.map((product) => (
+    <li key={product._id} className="group">
+      <div className="bg-cream rounded-xl overflow-hidden shadow-md hover:shadow-sm">
+        {/* Image */}
+        <div className="relative aspect-square overflow-hidden bg-gray-100">
+          <img
+            src={product.Image}
+            alt={product.title}
+            className="w-full h-full object-cover transition-transform duration-300 group-hover:scale-105"
+          />
+        </div>
+
+        {/* Content */}
+        <div className="p-4 flex flex-col gap-3">
+
+          {/* Title */}
+          <h2 className="text-sm sm:text-base font-semibold text-gray-800 line-clamp-2">
+            {product.title}
+          </h2>
+
+          {/* Price */}
+          <p className="text-lg font-bold text-indigo-600">
+            {product.price} DZD
+          </p>
+
+          {/* Button */}
+          <Link
+            to={`productDetais/${product._id}`}
+            className="mt-auto inline-flex items-center justify-center px-4 py-2 rounded-lg bg-indigo-600 text-white font-medium hover:bg-indigo-700 transition-colors duration-300"
+          >
+            Buy Now
+          </Link>
+        </div>
+
+      </div>
+    </li>
+  ))}
+</ul>
+
     )
 }
