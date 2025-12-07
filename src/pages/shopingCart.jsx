@@ -23,7 +23,7 @@ export default function ShoppingCart() {
                     <h2 className="text-xl font-semibold text-gray-800">{item.title}</h2>
                     <p className="text-gray-600">ID: {item.id}</p>
                     <p className="text-lg text-gray-800">{item.price}$</p>
-                    <p className="text-gray-500">Quantity: {item.quantity=count}</p>
+                    <p className="text-gray-500">Quantity: {item.quantity}</p>
                   </div>
 
                   <div className="flex items-center space-x-2">

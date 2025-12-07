@@ -12,7 +12,7 @@ export default function Checkout() {
 const titles = cart.map(item => item.title);
 
   const [order, setOrder] = useState({
-    order: titles, // send all cart items
+  order: {titles }, // send all cart items
     name: "",
     email: "",
     willaya: "",
@@ -32,7 +32,7 @@ const titles = cart.map(item => item.title);
     e.preventDefault(); // ✅ prevent page reload
 
     try {
-      await axios.post("https://backendoctoweb.onrender.com/order/", order);
+      await axios.post("https://backendoctoweb.onrender.com/order/",order);
       console.log("Order sent!");
       toast.success("🎉 Order placed successfully! Thank you for your purchase.", {
         position: "top-right",
@@ -61,10 +61,10 @@ const titles = cart.map(item => item.title);
 <>
     <Category/>
        <form  
-  onSubmit={handleValidate} 
+ onSubmit={handleValidate}
   className="w-full flex bg-white justify-center h-full items-center py-6"
 >
-  <fieldset className="w-92 bg-base-100 shadow-lg rounded-xl min-h-full border border-base-300 p-8 space-y-4">
+  <fieldset className="w-92 bg-slate-950 shadow-lg rounded-xl min-h-full border border-base-300 p-8 space-y-4">
     <legend className="text-xl text-blue-600 font-bold text-center mb-2">Checkout</legend>
 
     {/* Name */}
@@ -108,7 +108,7 @@ const titles = cart.map(item => item.title);
    <div className="form-control space-y-1">
       <label className="label text-sm font-medium">Willaya</label>
       <input
-        name="Number"
+        name="willaya"
         type="text"
         className="input input-neutral w-full rounded-lg"
         onChange={handleChange}
@@ -120,7 +120,7 @@ const titles = cart.map(item => item.title);
    <div className="form-control space-y-1">
       <label className="label text-sm font-medium">City</label>
       <input
-        name="Number"
+        name="city"
         type="text"
         className="input input-neutral w-full rounded-lg"
         onChange={handleChange}
@@ -134,8 +134,8 @@ const titles = cart.map(item => item.title);
 
     {/* Submit */}
     <button
-      type="submit" 
-      className="btn btn-neutral w-full rounded-lg font-semibold"
+    type="submit"
+      className="btn btn-neutral bg-green-600 w-full rounded-lg font-semibold"
     >
       Confirm Order
     </button>
@@ -146,7 +146,6 @@ const titles = cart.map(item => item.title);
 </form>
     <Timeline/>
   
-     <Fouter/>
 </>
 
   );

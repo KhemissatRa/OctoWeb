@@ -10,7 +10,8 @@ import 'react-toastify/dist/ReactToastify.css';
 
 export default function ProductDetais() {
   const { products } = useContext(ProductContext)
-  const { cart, addToCart, Dicrement, Increment, count } = useContext(CartContext)
+  const { cart, addToCart, Dicrement, Increment, count,setCount } = useContext(CartContext)
+
   const { id } = useParams()
 const AddCart =(params)=>{
   addToCart(params)
@@ -21,6 +22,7 @@ const AddCart =(params)=>{
           closeOnClick: true,
           pauseOnHover: true
         });
+        
 }
   const product = products.find((item) => item._id === id)
 
@@ -64,7 +66,6 @@ const AddCart =(params)=>{
         </div>
       </div>
 
-      <Fouter />
     </div>
   )
 }
