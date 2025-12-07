@@ -70,24 +70,24 @@ const orders = cart.map((item)=>{
     <legend className="text-xl text-blue-600 font-bold text-center mb-2">Checkout</legend>
 
     {/* Name */}
-    <div className="form-control space-y-1">
-      <label className="label text-sm font-medium">Full Name</label>
+    <div className="form-control text-gray-200 space-y-1">
+      <label className="label  text-sm font-medium">Full Name</label>
       <input  
         name="name"
         type="text"
         onChange={handleChange}
         placeholder="Enter your name"
-        className="input  input-neutral w-full rounded-lg"
+        className="input  input-neutral text-gray-200 w-full rounded-lg"
       />
     </div>
 
     {/* Email */}
     <div className="form-control space-y-1">
-      <label className="label text-sm font-medium">Email</label>
+      <label className="label text-sm text-gray-200 font-medium">Email</label>
       <input
         name="email"
         type="email"
-        className="input input-neutral w-full rounded-lg"
+        className="input input-neutra text-gray-200 w-full rounded-lg"
         onChange={handleChange}
         placeholder="Enter your email"
       />
@@ -95,11 +95,11 @@ const orders = cart.map((item)=>{
 
     {/* Phone */}
     <div className="form-control space-y-1">
-      <label className="label text-sm font-medium">Phone Number</label>
+      <label className="label text-sm text-gray-200 font-medium">Phone Number</label>
       <input
         name="Number"
         type="text"
-        className="input input-neutral w-full rounded-lg"
+        className="input input-neutral text-gray-200 w-full rounded-lg"
         onChange={handleChange}
         placeholder="Enter your phone number"
       />
@@ -108,11 +108,11 @@ const orders = cart.map((item)=>{
     {/* Wilaya */}
     
    <div className="form-control space-y-1">
-      <label className="label text-sm font-medium">Willaya</label>
+      <label className="label text-sm text-gray-200 font-medium">Willaya</label>
       <input
         name="willaya"
         type="text"
-        className="input input-neutral w-full rounded-lg"
+        className="input input-neutral text-gray-200 w-full rounded-lg"
         onChange={handleChange}
         placeholder="Enter your Willaya"
       />
@@ -120,17 +120,17 @@ const orders = cart.map((item)=>{
     {/* City */}
  
    <div className="form-control space-y-1">
-      <label className="label text-sm font-medium">City</label>
+      <label className="label text-sm text-gray-200  font-medium">City</label>
       <input
         name="city"
         type="text"
-        className="input input-neutral w-full rounded-lg"
+        className="input input-neutral text-gray-200 w-full rounded-lg"
         onChange={handleChange}
         placeholder="Enter your City"
       />
     </div>
     {/* Total */}
-    <h1 className="text-lg font-semibold text-center pt-2">
+    <h1 className="text-lg font-semibold text-white text-center pt-2">
       Total: {totalPrice} DA
     </h1>
 
