@@ -9,10 +9,13 @@ import 'react-toastify/dist/ReactToastify.css';
   
 export default function Checkout() {
   const { totalPrice, cart } = useContext(CartContext)
-const titles = cart.map(item => item.title);
+const orders = cart.map((item)=>{
+  item.title
+  ,item.quantity
+})
 
   const [order, setOrder] = useState({
-  order: {titles }, // send all cart items
+  order: {orders }, // send all cart items
     name: "",
     email: "",
     willaya: "",
@@ -61,7 +64,6 @@ const titles = cart.map(item => item.title);
 <>
     <Category/>
        <form  
- onSubmit={handleValidate}
   className="w-full flex bg-white justify-center h-full items-center py-6"
 >
   <fieldset className="w-92 bg-slate-950 shadow-lg rounded-xl min-h-full border border-base-300 p-8 space-y-4">
@@ -136,6 +138,8 @@ const titles = cart.map(item => item.title);
     <button
     type="submit"
       className="btn btn-neutral bg-green-600 w-full rounded-lg font-semibold"
+     onClick={handleValidate}
+
     >
       Confirm Order
     </button>
