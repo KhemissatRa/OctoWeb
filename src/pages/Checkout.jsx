@@ -10,22 +10,16 @@ import 'react-toastify/dist/ReactToastify.css'
 export default function Checkout() {
   const { totalPrice, cart } = useContext(CartContext)
 
-  // ✅ Build orders array correctly
-  const orders = cart.map(({ title, quantity }) => ({ title, quantity }))
-
-  // ✅ Proper order state
+  // ✅ Only store user info in state (NOT orders)
   const [order, setOrder] = useState({
-    order: orders,   // ✅ array, not object
     name: "",
     email: "",
     willaya: "",
     city: "",
-    Number: "",
-    totalPrice: totalPrice,
-    Done: false
+    Number: ""
   })
 
-  // ✅ Handle inputs
+  // ✅ Handle form input
   const handleChange = (e) => {
     setOrder({
       ...order,
@@ -33,7 +27,11 @@ export default function Checkout() {
     })
   }
 
-  // ✅ Handle submit
+  // ✅ Always build orders from cart
+  const buildOrders = () =>
+    cart.map(({ title, quantity }) => ({ title, quantity }))
+
+  // ✅ Submit order safely
   const handleValidate = async (e) => {
     e.preventDefault()
 
@@ -42,17 +40,28 @@ export default function Checkout() {
       return
     }
 
-    try {
-      await axios.post("https://backendoctoweb.onrender.com/order/", order)
+    const finalOrder = {
+      order: buildOrders(), // ✅ ALWAYS ARRAY
+      name: order.name,
+      email: order.email,
+      willaya: order.willaya,
+      city: order.city,
+      Number: order.Number,
+      totalPrice,
+      Done: false
+    }
 
-      toast.success("🎉 Order placed successfully! Thank you for your purchase.", {
+    try {
+      await axios.post("https://backendoctoweb.onrender.com/order/", finalOrder)
+
+      toast.success("🎉 Order placed successfully!", {
         position: "top-right",
         autoClose: 3000
       })
 
     } catch (err) {
       console.error(err)
-      toast.error("😕 Oops! Something went wrong. Please try again.", {
+      toast.error("😕 Failed to send order.", {
         position: "top-right",
         autoClose: 4000
       })
@@ -77,11 +86,11 @@ export default function Checkout() {
             <label className="label text-sm font-medium">Full Name</label>
             <input
               name="name"
-              type="text"
               required
               onChange={handleChange}
-              placeholder="Enter your name"
+              type="text"
               className="input input-neutral text-gray-200 w-full rounded-lg"
+              placeholder="Enter your name"
             />
           </div>
 
@@ -90,9 +99,9 @@ export default function Checkout() {
             <label className="label text-sm text-gray-200 font-medium">Email</label>
             <input
               name="email"
-              type="email"
               required
               onChange={handleChange}
+              type="email"
               className="input input-neutral text-gray-200 w-full rounded-lg"
               placeholder="Enter your email"
             />
@@ -103,9 +112,9 @@ export default function Checkout() {
             <label className="label text-sm text-gray-200 font-medium">Phone Number</label>
             <input
               name="Number"
-              type="text"
               required
               onChange={handleChange}
+              type="text"
               className="input input-neutral text-gray-200 w-full rounded-lg"
               placeholder="Enter your phone number"
             />
@@ -116,9 +125,9 @@ export default function Checkout() {
             <label className="label text-sm text-gray-200 font-medium">Willaya</label>
             <input
               name="willaya"
-              type="text"
               required
               onChange={handleChange}
+              type="text"
               className="input input-neutral text-gray-200 w-full rounded-lg"
               placeholder="Enter your Willaya"
             />
@@ -129,9 +138,9 @@ export default function Checkout() {
             <label className="label text-sm text-gray-200 font-medium">City</label>
             <input
               name="city"
-              type="text"
               required
               onChange={handleChange}
+              type="text"
               className="input input-neutral text-gray-200 w-full rounded-lg"
               placeholder="Enter your City"
             />
@@ -155,7 +164,7 @@ export default function Checkout() {
       <Timeline />
       <Fouter />
 
-      {/* ✅ Toast container */}
+      {/* ✅ Toast must be rendered ONCE */}
       <ToastContainer />
     </>
   )
