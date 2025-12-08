@@ -89,7 +89,7 @@ export default function Checkout() {
               required
               onChange={handleChange}
               type="text"
-              className="input input-neutral text-gray-200 w-full rounded-lg"
+              className="input input-neutral  bg-gray-200 text-black w-full rounded-lg"
               placeholder="Enter your name"
             />
           </div>
@@ -102,7 +102,7 @@ export default function Checkout() {
               required
               onChange={handleChange}
               type="email"
-              className="input input-neutral text-gray-200 w-full rounded-lg"
+              className="input input-neutral bg-gray-200 text-black w-full rounded-lg"
               placeholder="Enter your email"
             />
           </div>
@@ -115,7 +115,7 @@ export default function Checkout() {
               required
               onChange={handleChange}
               type="text"
-              className="input input-neutral text-gray-200 w-full rounded-lg"
+              className="input input-neutral bg-gray-200 text-black w-full rounded-lg"
               placeholder="Enter your phone number"
             />
           </div>
@@ -128,7 +128,7 @@ export default function Checkout() {
               required
               onChange={handleChange}
               type="text"
-              className="input input-neutral text-gray-200 w-full rounded-lg"
+              className="input input-neutral bg-gray-200 text-black w-full rounded-lg"
               placeholder="Enter your Willaya"
             />
           </div>
@@ -141,7 +141,7 @@ export default function Checkout() {
               required
               onChange={handleChange}
               type="text"
-              className="input input-neutral text-gray-200 w-full rounded-lg"
+              className="input input-neutral bg-gray-200 text-black w-full rounded-lg"
               placeholder="Enter your City"
             />
           </div>
