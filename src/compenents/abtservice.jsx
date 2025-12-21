@@ -4,18 +4,19 @@ import { Truck, Package, Shield } from 'lucide-react'; // Example icons
 const services = [
   {
     icon: <Truck className="w-8 h-8 text-blue-500" />,
-    title: 'Fast Delivery',
-    description: 'We ensure your orders reach you quickly and safely.'
+    title: 'توصيل سريع',
+    description: 'نتاكد من توصيل طلبيتكم في اسرع وقت ممكن.'
   },
   {
     icon: <Package className="w-8 h-8 text-green-500" />,
-    title: 'Secure Packaging',
-    description: 'All products are packaged securely for safe transportation.'
+    title: 'تغليف امن',
+    description: 'كل طلياتنا تفلف بعناية لضمان سلامة بضاعتنا.'
+
   },
   {
     icon: <Shield className="w-8 h-8 text-red-500" />,
-    title: 'Reliable Service',
-    description: 'Trustworthy service with 24/7 customer support.'
+    title: 'دعم دائم',
+    description: 'الدعم متوفر طيلة ايام الاسبوع 24/7.'
   }
 ];
 
@@ -31,7 +32,7 @@ const ServiceSection = () => {
   return (
     <section className="py-16 italic">
       <div className="container mx-auto px-6">
-        <h2 className="text-3xl font-bold text-center text-black mb-12">Our Services</h2>
+        <h2 className="text-3xl font-bold text-center text-black mb-12">خدماتنا</h2>
         <div className="grid md:grid-cols-3 gap-8">
           {services.map((service, index) => (
             <ServiceCard

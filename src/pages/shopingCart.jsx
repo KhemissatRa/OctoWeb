@@ -13,7 +13,7 @@ export default function ShoppingCart() {
       <h1 className="text-3xl font-bold text-center text-gray-800 mb-6">Shopping Cart</h1>
       <div aria-live="polite">
         {cart.length === 0 ? (
-          <h2 className="text-lg text-gray-600 text-center">Your cart is empty.</h2>
+          <h2 className="text-lg text-gray-600 text-center">سلتك فارعة.</h2>
         ) : (
           <>
             <ul className="space-y-4">
@@ -32,22 +32,21 @@ export default function ShoppingCart() {
                       onClick={() => Increment(item)}
                       aria-label={`Add more of ${item.title}`}
                     >
-                      Add
-                    </button>
+اضف                    </button>
 
                     <button 
                       onClick={() => Dicrement(item)} 
                       className="bg-red-500 text-white py-2 px-4 rounded hover:bg-red-700 transition duration-200"
                       aria-label={`Remove ${item.title} from cart`}
                     >
-                      Remove
+                      مسح
                     </button>
                   </div>
                 </li>
               ))}
             </ul>
             <div className="mt-6 flex justify-between text-black font-bold text-lg">
-              <span>Total:</span>
+              <span>المجموع:</span>
               <span>{totalPrice}$</span>
             </div>
           
@@ -58,8 +57,7 @@ export default function ShoppingCart() {
             className="mt-4 w-full bg-blue-500 text-white py-2 rounded hover:bg-blue-600 transition duration-200"
             aria-label="Proceed to checkout"
           >
-            Proceed to Checkout
-          </button >
+فدم الطلب          </button >
       
           
         </Link>
@@ -68,8 +66,7 @@ export default function ShoppingCart() {
             aria-label="Proceed to checkout"
             onClick={() => setCart([])}   
           >
-            Clear cart
-          </button >
+مسح السلة          </button >
       </div>
     </div>
   )}

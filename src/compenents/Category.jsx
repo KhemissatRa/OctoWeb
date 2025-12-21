@@ -4,13 +4,13 @@ export default function Category() {
   return (
     <div className='flex flex-col  text-center items-center '>
 <h1 className="text-[#1D232A] text-xl  sm:text-3xl p-4 font-bold  leading-tight text-center">
-  Browse Our Full List Of{" "}
+  تصفخ كامل {" "}
   <span className="bg-gradient-to-r from-blue-600 to-indigo-600 bg-clip-text text-transparent italic">
-    Category
+    الاقسام
   </span>{" "}
-  And Get{" "}
+  واحصل على{" "}
   <span className="text-yellow-500 drop-shadow font-black">
-    20% Off
+    20% خصم
   </span>
 </h1>
 <div className="carousel carousel-center  bg-neutral rounded-box max-w-full space-x-4 p-4">

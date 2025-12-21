@@ -5,7 +5,7 @@ const   counter = 200
   return (
     <div className="w-full flex flex-col p-8 items-center py-8 rounded-2xl ">
   <h1 className="text-3xl sm:text-4xl font-bold text-center text-gray-800 mb-6 tracking-wide">
-    <span className="text-indigo-600 italic">Up to 30% Off</span> On All Products 🎉
+    <span className="text-indigo-600 italic">رقم الخصم القادم</span>  🎉قريبا
   </h1>
 
   <div className="grid grid-flow-col gap-2 px-8 text-center auto-cols-max">
