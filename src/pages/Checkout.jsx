@@ -83,54 +83,65 @@ export default function Checkout() {
 
           {/* Name */}
           <div className="form-control text-gray-200 space-y-1">
-            <label className="label text-sm font-medium">الاسم الكامل</label>
+            <label className="label text-sm font-medium">Full Name</label>
             <input
               name="name"
               required
               onChange={handleChange}
               type="text"
-              className="input input-neutral text-gray-200 w-full rounded-lg"
+              className="input input-neutral  bg-gray-200 text-black w-full rounded-lg"
               placeholder="Enter your name"
             />
           </div>
 
-         
+          {/* Email */}
+          <div className="form-control space-y-1">
+            <label className="label text-sm text-gray-200 font-medium">Email</label>
+            <input
+              name="email"
+              required
+              onChange={handleChange}
+              type="email"
+              className="input input-neutral bg-gray-200 text-black w-full rounded-lg"
+              placeholder="Enter your email"
+            />
+          </div>
 
           {/* Phone */}
           <div className="form-control space-y-1">
-            <label className="label text-sm text-gray-200 font-medium">رقم الهاتف</label>
+            <label className="label text-sm text-gray-200 font-medium">Phone Number</label>
             <input
               name="Number"
               required
               onChange={handleChange}
               type="text"
-              className="input input-neutral text-gray-200 w-full rounded-lg"
+              className="input input-neutral bg-gray-200 text-black w-full rounded-lg"
               placeholder="Enter your phone number"
             />
           </div>
 
           {/* Wilaya */}
           <div className="form-control space-y-1">
-            <label className="label text-sm text-gray-200 font-medium">الولاية</label>
+            <label className="label text-sm text-gray-200 font-medium">Willaya</label>
             <input
               name="willaya"
               required
               onChange={handleChange}
               type="text"
-              className="input input-neutral text-gray-200 w-full rounded-lg"
+              className="input input-neutral bg-gray-200 text-black w-full rounded-lg"
               placeholder="Enter your Willaya"
             />
           </div>
 
           {/* City */}
           <div className="form-control space-y-1">
-            <label className="label text-sm text-gray-200 font-medium">المدينة</label>
+            <label className="label text-sm text-gray-200 font-medium">City</label>
             <input
               name="city"
               required
               onChange={handleChange}
               type="text"
-              className="input input-neutral text-gray-200 w-full rounded-lg"
+              className="input input-neutral bg-gray-200 text-black w-full rounded-lg"
               placeholder="Enter your City"
             />
           </div>
@@ -145,11 +156,13 @@ export default function Checkout() {
             type="submit"
             className="btn btn-neutral bg-green-600 w-full rounded-lg font-semibold"
           >
-قدم الطلب          </button>
+            Confirm Order
+          </button>
         </fieldset>
       </form>
 
       <Timeline />
+      <Fouter />
 
       {/* ✅ Toast must be rendered ONCE */}
       <ToastContainer />
