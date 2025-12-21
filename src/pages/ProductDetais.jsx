@@ -54,7 +54,7 @@ const AddCart =(params)=>{
 
         <div className="flex flex-col space-y-2 items-center justify-center">
           <button onClick={() => AddCart(product)} className="btn text-primary btn-wide">
-            <Link to="/cart">Buy Now</Link>
+            <Link to="/cart">اشتري الان</Link>
           </button>
 
           <div className="flex items-center space-x-2">

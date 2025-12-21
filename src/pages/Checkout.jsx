@@ -83,7 +83,7 @@ export default function Checkout() {
 
           {/* Name */}
           <div className="form-control text-gray-200 space-y-1">
-            <label className="label text-sm font-medium">Full Name</label>
+            <label className="label text-sm font-medium">الاسم الكامل</label>
             <input
               name="name"
               required
@@ -94,22 +94,11 @@ export default function Checkout() {
             />
           </div>
 
-          {/* Email */}
-          <div className="form-control space-y-1">
-            <label className="label text-sm text-gray-200 font-medium">Email</label>
-            <input
-              name="email"
-              required
-              onChange={handleChange}
-              type="email"
-              className="input input-neutral bg-gray-200 text-black w-full rounded-lg"
-              placeholder="Enter your email"
-            />
-          </div>
+
 
           {/* Phone */}
           <div className="form-control space-y-1">
-            <label className="label text-sm text-gray-200 font-medium">Phone Number</label>
+            <label className="label text-sm text-gray-200 font-medium">رقم الهاتف</label>
             <input
               name="Number"
               required
@@ -122,7 +111,7 @@ export default function Checkout() {
 
           {/* Wilaya */}
           <div className="form-control space-y-1">
-            <label className="label text-sm text-gray-200 font-medium">Willaya</label>
+            <label className="label text-sm text-gray-200 font-medium">الولاية</label>
             <input
               name="willaya"
               required
@@ -135,7 +124,7 @@ export default function Checkout() {
 
           {/* City */}
           <div className="form-control space-y-1">
-            <label className="label text-sm text-gray-200 font-medium">City</label>
+            <label className="label text-sm text-gray-200 font-medium">المدينة</label>
             <input
               name="city"
               required
@@ -148,7 +137,7 @@ export default function Checkout() {
 
           {/* Total */}
           <h1 className="text-lg font-semibold text-white text-center pt-2">
-            Total: {totalPrice} DA
+            :المجموع {totalPrice} DA
           </h1>
 
           {/* Submit */}
