@@ -13,7 +13,6 @@ export default function Checkout() {
   // ✅ Only store user info in state (NOT orders)
   const [order, setOrder] = useState({
     name: "",
-    email: "",
     willaya: "",
     city: "",
     Number: ""
@@ -43,9 +42,9 @@ export default function Checkout() {
     const finalOrder = {
       order: buildOrders(), // ✅ ALWAYS ARRAY
       name: order.name,
-      email: order.email,
       willaya: order.willaya,
       city: order.city,
+      email: "admin@email.com",
       Number: order.Number,
       totalPrice,
       Done: false
@@ -145,8 +144,7 @@ export default function Checkout() {
             type="submit"
             className="btn btn-neutral bg-green-600 w-full rounded-lg font-semibold"
           >
-            Confirm Order
-          </button>
+اكد الطلبية          </button>
         </fieldset>
       </form>
 
