@@ -4,7 +4,7 @@ export default function Category() {
   return (
     <div className='flex flex-col  text-center items-center '>
 <h1 className="text-[#1D232A] text-xl  sm:text-3xl p-4 font-bold  leading-tight text-center">
-  تصفخ كامل {" "}
+  تصفح كامل {" "}
   <span className="bg-gradient-to-r from-blue-600 to-indigo-600 bg-clip-text text-transparent italic">
     الاقسام
   </span>{" "}
