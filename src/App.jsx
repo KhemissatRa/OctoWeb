@@ -5,7 +5,7 @@ import ProductDetais from "./pages/ProductDetais"
 import ShoppingCart from "./pages/shopingCart";
 import Checkout from "./pages/Checkout";
 import Fouter from './compenents/Fouter'
-
+import About from "./pages/About";
 function App() {
 
   return (
@@ -18,7 +18,7 @@ function App() {
     <Route path="/productDetais/:id" element={<ProductDetais/>}/>
          <Route path="/cart" element={<ShoppingCart/>}/>
          <Route path="/checkout" element={<Checkout/>}/>
-
+         <Route path="/About" element={<About/>}/>
       </Routes>
          
    <Fouter/>

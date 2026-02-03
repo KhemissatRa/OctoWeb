@@ -7,8 +7,9 @@ import ServiceSection from '../compenents/abtservice'
   return (
     <div className=' bg-white flex justify-center items-center flex-col space-y-8 p-8 items-center'>
    <Category/>
+      <ServiceSection/>
+
    <ProductList/>
-   <ServiceSection/>
 
       <Timeline/>
 

@@ -6,9 +6,14 @@ export default function Nav() {
   return (
  
   <div className="flex justify-center navbar bg-slate-950 shadow-sm">
-  <div className="flex-1">
+  <div className="flex-1 ">
     <a className="btn btn-ghost text-yellow-600 text-xl">OctoShop</a>
+
   </div>
+  <div className="flex-5 justify-start align-center space-x-2 ">
+  <Link to="/">Home</Link>
+  <Link to="/About">About Us</Link>
+  </div> 
   <div className="flex-none">
     <div className="dropdown dropdown-end">
       <div tabIndex={0} role="button" className="btn btn-ghost btn-circle">
