@@ -8,7 +8,7 @@ import { CartContext } from '../context/cartContext'
 
 export default function ProductDetais() {
   const { products } = useContext(ProductContext)
-  const { cart, addToCart, Dicrement, Increment, count, setCount } = useContext(CartContext)
+  const {  addToCart, Dicrement, Increment, count, setCount } = useContext(CartContext)
   const { id } = useParams()
 
   const [showModal, setShowModal] = useState(false)

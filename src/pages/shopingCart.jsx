@@ -57,7 +57,7 @@ export default function ShoppingCart() {
             className="mt-4 w-full bg-blue-500 text-white py-2 rounded hover:bg-blue-600 transition duration-200"
             aria-label="Proceed to checkout"
           >
-فدم الطلب          </button >
+قدم الطلب         </button >
       
           
         </Link>

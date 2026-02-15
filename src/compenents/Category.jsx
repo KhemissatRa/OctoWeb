@@ -4,13 +4,10 @@ export default function Category() {
   return (
 <div>
 <h1 className="text-[#1D232A] text-2xl sm:text-4xl md:text-5xl px-4 py-4 font-bold leading-tight text-center">
-  تصفح كامل{" "}
-  <span className="bg-gradient-to-r from-blue-600 to-indigo-600 bg-clip-text text-transparent font-extrabold">
-    الأقسام
-  </span>
+
 
   <span className="inline-block px-4 py-2 bg-black text-white rounded-lg font-black text-3xl sm:text-4xl shadow-lg">
-   {" "}واحصل على{" "}  20% خصم 
+   Hello with us <span className='text-blue-800'>OctoWeb</span>
   </span>
 </h1>
 <div className="carousel carousel-center h-92 bg-neutral rounded-box  space-x-4 p-2">
