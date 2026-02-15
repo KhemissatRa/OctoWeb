@@ -43,10 +43,10 @@ const About = () => {
 
         <div className="relative z-10 text-center px-6 py-12 max-w-5xl mx-auto animate-fade-in-up">
           <h1 className="text-5xl md:text-7xl lg:text-8xl font-bold text-white mb-6 leading-tight">
-            نحن نبني مستقبل <span className="text-orange-500">التجارة</span>
+            متجرك المحلي <span className="text-orange-500">في الجزائر</span>
           </h1>
           <p className="text-xl md:text-2xl text-gray-200 leading-relaxed max-w-3xl mx-auto">
-            حيث يلتقي الابتكار بالتميز، وكل عملية شراء تحكي قصة فريدة
+            حيث يلتقي التقليد بالحداثة، ونخدم عائلات الجزائر بحب وإخلاص
           </p>
         </div>
 
@@ -68,11 +68,11 @@ const About = () => {
               رحلتنا
             </div>
             <h2 className="text-4xl md:text-6xl lg:text-7xl font-bold text-gray-900 mb-8 leading-tight">
-              من الرؤية إلى الواقع
+              من حلم عائلي إلى واقع جميل
             </h2>
             <p className="text-lg md:text-xl text-gray-600 leading-relaxed max-w-3xl mx-auto">
-              ما بدأ كفكرة بسيطة تطور إلى حركة كاملة. نحن لسنا مجرد منصة تجارة إلكترونية أخرى - 
-              نحن نعيد تصور كيفية اكتشاف الناس والتواصل مع الأشياء التي يحبونها وشرائها.
+              بدأنا كمحل صغير في حي شعبي، بحلم بسيط: خدمة جيراننا بأفضل المنتجات وأسعار معقولة. 
+              اليوم، نفخر بكوننا جزءاً من حياة المئات من العائلات الجزائرية.
             </p>
           </div>
 
@@ -84,14 +84,14 @@ const About = () => {
             >
               <div className="bg-stone-50 p-8 md:p-10 border-r-4 border-orange-500 hover:shadow-2xl hover:-translate-y-2 transition-all duration-500">
                 <div className="text-5xl md:text-6xl font-bold text-orange-500 mb-4 opacity-90">
-                  2020
+                  2021
                 </div>
                 <h3 className="text-2xl md:text-3xl font-bold text-gray-900 mb-4">
-                  البداية
+                  البداية المتواضعة
                 </h3>
                 <p className="text-base md:text-lg text-gray-600 leading-relaxed">
-                  تأسست بمهمة خلق تجربة تسوق سلسة تضع العملاء في المقام الأول. 
-                  بدأنا صغاراً، لكننا حلمنا بشكل كبير وكان لدينا رؤية واضحة.
+                  افتتحنا متجرنا الصغير في الجزائر العاصمة بمنتجات محلية منتقاة بعناية. 
+                  كان هدفنا بسيطاً: خدمة الحي وتوفير الجودة بأسعار عادلة.
                 </p>
               </div>
             </div>
@@ -103,14 +103,14 @@ const About = () => {
             >
               <div className="bg-stone-50 p-8 md:p-10 border-r-4 border-orange-500 hover:shadow-2xl hover:-translate-y-2 transition-all duration-500">
                 <div className="text-5xl md:text-6xl font-bold text-orange-500 mb-4 opacity-90">
-                  2022
+                  2023
                 </div>
                 <h3 className="text-2xl md:text-3xl font-bold text-gray-900 mb-4">
-                  النمو السريع
+                  ثقة الزبائن
                 </h3>
                 <p className="text-base md:text-lg text-gray-600 leading-relaxed">
-                  وسعنا كتالوجنا ليشمل آلاف المنتجات المتنوعة وبنينا مجتمعاً من العملاء 
-                  المتحمسين الذين يؤمنون بالجودة والأصالة والتميز.
+                  بفضل ثقتكم، توسعنا وأصبحنا نقدم مجموعة أكبر من المنتجات اليومية 
+                  والحرفية المحلية. عائلاتنا يثقون بنا، وهذا أغلى ما نملك.
                 </p>
               </div>
             </div>
@@ -122,14 +122,14 @@ const About = () => {
             >
               <div className="bg-stone-50 p-8 md:p-10 border-r-4 border-orange-500 hover:shadow-2xl hover:-translate-y-2 transition-all duration-500">
                 <div className="text-5xl md:text-6xl font-bold text-orange-500 mb-4 opacity-90">
-                  2024
+                  2025
                 </div>
                 <h3 className="text-2xl md:text-3xl font-bold text-gray-900 mb-4">
-                  عصر الابتكار
+                  التطور الرقمي
                 </h3>
                 <p className="text-base md:text-lg text-gray-600 leading-relaxed">
-                  أطلقنا ميزات متطورة أحدثت ثورة في التسوق عبر الإنترنت، من التوصيات 
-                  المدعومة بالذكاء الاصطناعي إلى مبادرات التغليف المستدام.
+                  أطلقنا متجرنا الإلكتروني لنصل إلى المزيد من العائلات في الجزائر، 
+                  مع الحفاظ على نفس الجودة والخدمة التي تعرفوننا بها.
                 </p>
               </div>
             </div>
@@ -153,7 +153,7 @@ const About = () => {
             className="text-center mb-16 md:mb-20 opacity-0 translate-y-8 transition-all duration-1000"
           >
             <div className="text-sm md:text-base tracking-widest uppercase text-orange-500 font-semibold mb-4">
-              ما يحركنا
+              ما يميزنا
             </div>
             <h2 className="text-4xl md:text-6xl lg:text-7xl font-bold text-white mb-8 leading-tight">
               قيمنا الأساسية
@@ -171,14 +171,14 @@ const About = () => {
               <div className="absolute inset-0 bg-gradient-to-r from-transparent via-orange-500/10 to-transparent 
                               -translate-x-full group-hover:translate-x-full transition-transform duration-1000"></div>
               <div className="text-6xl mb-6 animate-float">
-                🎯
+                🤝
               </div>
               <h3 className="text-2xl md:text-3xl font-bold text-white mb-4">
-                هوس العملاء
+                الأمانة والثقة
               </h3>
               <p className="text-base md:text-lg text-gray-300 leading-relaxed">
-                كل قرار نتخذه يبدأ بعملائنا. رضاهم ليس مجرد هدفنا - إنه هوسنا 
-                الحقيقي وشغفنا اليومي.
+                نتعامل مع كل زبون كأنه من العائلة. الأمانة في التعامل والصدق في البيع 
+                هما أساس نجاحنا وسر ثقتكم بنا.
               </p>
             </div>
 
@@ -192,14 +192,14 @@ const About = () => {
               <div className="absolute inset-0 bg-gradient-to-r from-transparent via-orange-500/10 to-transparent 
                               -translate-x-full group-hover:translate-x-full transition-transform duration-1000"></div>
               <div className="text-6xl mb-6 animate-float animation-delay-500">
-                ⚡
+                🇩🇿
               </div>
               <h3 className="text-2xl md:text-3xl font-bold text-white mb-4">
-                الابتكار المستمر
+                دعم المنتج المحلي
               </h3>
               <p className="text-base md:text-lg text-gray-300 leading-relaxed">
-                نحن لا نستقر أبداً. ندفع الحدود باستمرار ونستكشف طرقاً جديدة 
-                لتحسين تجربة التسوق وتقديم الأفضل.
+                نفخر بتقديم منتجات جزائرية أصيلة من حرفيين ومنتجين محليين. 
+                ندعم الاقتصاد الوطني ونحافظ على تراثنا.
               </p>
             </div>
 
@@ -213,14 +213,14 @@ const About = () => {
               <div className="absolute inset-0 bg-gradient-to-r from-transparent via-orange-500/10 to-transparent 
                               -translate-x-full group-hover:translate-x-full transition-transform duration-1000"></div>
               <div className="text-6xl mb-6 animate-float animation-delay-1000">
-                🌱
+                💚
               </div>
               <h3 className="text-2xl md:text-3xl font-bold text-white mb-4">
-                الاستدامة أولاً
+                خدمة من القلب
               </h3>
               <p className="text-base md:text-lg text-gray-300 leading-relaxed">
-                نحن ملتزمون ببناء مستقبل أفضل من خلال الممارسات الصديقة للبيئة 
-                والعمليات التجارية المسؤولة.
+                كل زبون عندنا غالي. نسعى دائماً لتقديم أحسن خدمة وأفضل تجربة تسوق 
+                لكل عائلة تثق بنا.
               </p>
             </div>
           </div>
@@ -235,10 +235,10 @@ const About = () => {
             className="text-center mb-16 md:mb-20 opacity-0 translate-y-8 transition-all duration-1000"
           >
             <div className="text-sm md:text-base tracking-widest uppercase text-orange-500 font-semibold mb-4">
-              الأشخاص وراء أوكتو
+              عائلة المحل
             </div>
             <h2 className="text-4xl md:text-6xl lg:text-7xl font-bold text-gray-900 mb-8 leading-tight">
-              بناه الحالمون، يدفعه الشغف
+              نحن في خدمتكم دائماً
             </h2>
           </div>
 
@@ -247,9 +247,8 @@ const About = () => {
             className="text-center max-w-4xl mx-auto mb-16 opacity-0 translate-y-8 transition-all duration-1000 delay-100"
           >
             <p className="text-lg md:text-xl text-gray-600 leading-relaxed">
-              نحن فريق متنوع من المبدعين والمفكرين والفاعلين الذين يشتركون في رؤية مشتركة: 
-              تحويل طريقة تسوق الناس عبر الإنترنت. من سحرة التكنولوجيا لدينا إلى أبطال خدمة العملاء، 
-              كل عضو في الفريق يلعب دوراً حيوياً في تقديم التميز والابتكار.
+              نحن عائلة جزائرية بسيطة، نعمل بجد لنقدم لكم أفضل المنتجات بأسعار في متناول الجميع. 
+              من صاحب المحل إلى البائعين، كل واحد فينا يعتبركم عائلته ويسعى لخدمتكم بكل إخلاص ومحبة.
             </p>
           </div>
 
@@ -260,10 +259,10 @@ const About = () => {
               className="text-center opacity-0 translate-y-8 transition-all duration-1000 delay-100"
             >
               <div className="text-5xl md:text-7xl font-bold text-orange-500 mb-3">
-                +50
+                5
               </div>
               <div className="text-base md:text-lg uppercase tracking-wider text-gray-600">
-                عضو في الفريق
+                أفراد الفريق
               </div>
             </div>
 
@@ -272,10 +271,10 @@ const About = () => {
               className="text-center opacity-0 translate-y-8 transition-all duration-1000 delay-200"
             >
               <div className="text-5xl md:text-7xl font-bold text-orange-500 mb-3">
-                +100K
+                +800
               </div>
               <div className="text-base md:text-lg uppercase tracking-wider text-gray-600">
-                عميل سعيد
+                عميل راضي
               </div>
             </div>
 
@@ -284,7 +283,7 @@ const About = () => {
               className="text-center opacity-0 translate-y-8 transition-all duration-1000 delay-300"
             >
               <div className="text-5xl md:text-7xl font-bold text-orange-500 mb-3">
-                +500K
+                +3K
               </div>
               <div className="text-base md:text-lg uppercase tracking-wider text-gray-600">
                 منتج مسلّم
@@ -296,10 +295,10 @@ const About = () => {
               className="text-center opacity-0 translate-y-8 transition-all duration-1000 delay-[400ms]"
             >
               <div className="text-5xl md:text-7xl font-bold text-orange-500 mb-3">
-                +25
+                4
               </div>
               <div className="text-base md:text-lg uppercase tracking-wider text-gray-600">
-                دولة نخدمها
+                سنوات من الثقة
               </div>
             </div>
           </div>
@@ -318,10 +317,10 @@ const About = () => {
 
         <div className="container mx-auto px-6 max-w-4xl text-center relative z-10">
           <h2 className="text-4xl md:text-6xl lg:text-7xl font-bold mb-6 leading-tight">
-            هل أنت مستعد لتجربة الفرق؟
+            تفضل بزيارتنا اليوم
           </h2>
           <p className="text-xl md:text-2xl mb-10 leading-relaxed opacity-95">
-            انضم إلى آلاف العملاء الراضين الذين اكتشفوا طريقة أفضل للتسوق عبر الإنترنت.
+            انضم لعائلة زبائننا واكتشف الفرق في الجودة والخدمة. نحن في انتظاركم!
           </p>
           <a 
             href="/" 
@@ -330,7 +329,7 @@ const About = () => {
                        hover:bg-transparent hover:text-white transition-all duration-300
                        hover:-translate-y-1 hover:shadow-2xl"
           >
-            ابدأ التسوق
+            تسوق الآن
           </a>
         </div>
       </section>

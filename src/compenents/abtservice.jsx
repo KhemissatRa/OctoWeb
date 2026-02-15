@@ -5,7 +5,7 @@ const services = [
   {
     icon: Truck,
     title: 'توصيل سريع',
-    description: 'نتأكد من توصيل طلبيتكم في أسرع وقت ممكن.',
+    description: 'التوصيل لباب الدار في 24-48 ساعة لوهران والولايات القريبة.',
     gradient: 'from-blue-500 to-cyan-500',
     bgColor: 'bg-blue-50',
     shadowColor: 'hover:shadow-blue-200'
@@ -13,7 +13,7 @@ const services = [
   {
     icon: Package,
     title: 'تغليف آمن',
-    description: 'كل طلبياتنا تُغلف بعناية لضمان سلامة بضاعتنا.',
+    description: 'نستعمل تغليف محترف وآمن. كل طلب يوصل في حالة ممتازة مضمونة.',
     gradient: 'from-green-500 to-emerald-500',
     bgColor: 'bg-green-50',
     shadowColor: 'hover:shadow-green-200'
@@ -21,7 +21,7 @@ const services = [
   {
     icon: Shield,
     title: 'دعم دائم',
-    description: 'الدعم متوفر طيلة أيام الأسبوع 24/7.',
+    description: 'خدمة الزبائن متوفرة من السبت للخميس، 8 صباحاً - 7 مساءً.',
     gradient: 'from-red-500 to-pink-500',
     bgColor: 'bg-red-50',
     shadowColor: 'hover:shadow-red-200'
