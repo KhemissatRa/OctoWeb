@@ -38,13 +38,13 @@ export default function Category() {
   </div>
 </div>
 
-    <div>
+    <div className="flex flex-col justify-center" >
       <h1 className="text-5xl font-bold text-slate-900">Box Office News!</h1>
       <p className="py-6">
         Provident cupiditate voluptatem et in. Quaerat fugiat ut assumenda excepturi exercitationem
         quasi. In deleniti eaque aut repudiandae et a id nisi.
       </p>
-      <button className="btn bg-slate-600 m-auto md:m-2">whatsapp </button>
+      <button className="btn btn-success  flex ">whatsapp </button>
     </div>
   </div>
 </div>
