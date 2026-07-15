@@ -10,7 +10,7 @@ export default function ProductList() {
       <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 p-4">
   {products.map((product) => (
 
-      <div key={product.id} className="border flex-col  justify-center items-center border-2 rounded-xl  shadow-md  bg-slate-900 text-sm h-86 p-2 w-56">
+      <div key={product.id} className="border flex-col  justify-center items-center border-2 rounded-xl  shadow-md  bg-slate-800 text-sm h-86 p-2 w-56">
         <img className="group-hover:scale-105 w-full h-40 w-full transition " src={product.Image} alt="Product Image" />
     
     <div className="text-white flex-col space-y-2 text-center   text-sm ">
