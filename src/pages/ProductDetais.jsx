@@ -171,7 +171,6 @@ export default function ProductDetais() {
         </div>
       </div>
 
-      <Timeline />
       <Fouter />
 
       {/* Success Modal */}

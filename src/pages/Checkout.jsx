@@ -253,7 +253,6 @@ export default function Checkout() {
         </form>
       </div>
 
-      <Timeline />
 
       {/* Custom Modal */}
       {showModal && (
