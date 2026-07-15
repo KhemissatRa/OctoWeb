@@ -69,9 +69,7 @@ export default function Timeline() {
         </div>
 
         {/* CTA Button */}
-        <button className="px-8 py-3 bg-blue-600 hover:bg-blue-700 text-white font-semibold rounded-lg shadow-md hover:shadow-lg transition-all duration-200">
-          أخبرني عند بدء العرض
-        </button>
+    
       </div>
     </div>
   );

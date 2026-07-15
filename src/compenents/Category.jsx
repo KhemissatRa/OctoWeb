@@ -1,16 +1,8 @@
-import React from 'react'
-
 export default function Category() {
   return (
-<div>
-<h1 className="text-[#1D232A] text-2xl sm:text-4xl md:text-5xl px-4 py-4 font-bold leading-tight text-center">
-
-
-  <span className="inline-block px-4 py-2 bg-black text-white rounded-lg font-black text-3xl sm:text-4xl shadow-lg">
-   Hello with us <span className='text-blue-800'>OctoWeb</span>
-  </span>
-</h1>
-<div className="carousel carousel-center h-92 bg-neutral rounded-box  space-x-4 p-2">
+    <div className="hero bg-zinc-50 text-zinc-900 min-h-screen">
+  <div className="hero-content flex-col lg:flex-row-reverse">
+   <div className="carousel carousel-vertical rounded-box h-96">
 
   <div className=" carousel-item">
     <img
@@ -44,5 +36,18 @@ export default function Category() {
 
       className="rounded-box " />
   </div>
-</div></div>  )
+</div>
+
+    <div>
+      <h1 className="text-5xl font-bold text-slate-900">Box Office News!</h1>
+      <p className="py-6">
+        Provident cupiditate voluptatem et in. Quaerat fugiat ut assumenda excepturi exercitationem
+        quasi. In deleniti eaque aut repudiandae et a id nisi.
+      </p>
+      <button className="btn bg-slate-600 m-auto md:m-2">whatsapp </button>
+    </div>
+  </div>
+</div>
+
+  )
 }
